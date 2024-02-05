@@ -1,0 +1,36 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Salario de desemvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 1400,
+      "createdAt": "Mon Feb 05 2024 18:49:13 GMT-0300"
+    },
+    {
+      "id": 2,
+      "description": "Hamburger",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 82,
+      "createdAt": "Mon Feb 05 2024 18:49:13 GMT-0300"
+    },
+    {
+      "id": 3,
+      "description": "Freela - Ux designer",
+      "type": "income",
+      "category": "Freela",
+      "price": 1400,
+      "createdAt": "Mon Feb 05 2024 18:49:13 GMT-0300"
+    },
+    {
+      "id": 4,
+      "description": "Freela - Desemvolvimento de site",
+      "type": "income",
+      "category": "Freela",
+      "price": 1400,
+      "createdAt": "Mon Feb 05 2024 18:49:13 GMT-0300"
+    }
+  ]
+}
