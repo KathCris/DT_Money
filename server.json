@@ -2,7 +2,7 @@
   "transactions": [
     {
       "id": 1,
-      "description": "Salario de desemvolvimento de site",
+      "title": "Salario de desemvolvimento de site",
       "type": "income",
       "category": "Venda",
       "price": 1400,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "description": "Hamburger",
+      "title": "Hamburger",
       "type": "outcome",
       "category": "Alimentação",
       "price": 82,
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "description": "Freela - Ux designer",
+      "title": "Freela - Ux designer",
       "type": "income",
       "category": "Freela",
       "price": 1400,
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "description": "Freela - Desemvolvimento de site",
+      "title": "Freela - Desemvolvimento de site",
       "type": "income",
       "category": "Freela",
       "price": 1400,
