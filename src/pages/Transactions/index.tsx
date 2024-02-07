@@ -1,36 +1,16 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./Components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
+import { dateFormatter, priceFormatter } from "../../utils/formatter";
 
-interface Transactions {
-    id: number,
-    title: string,
-    type: "income" | 'outcome',
-    category: string,
-    price: number,
-    createdAt: string
-}
+
 
 export function Transactions () {
 
-    const [transactions, setTransactions] = useState<Transactions[]>([]);
-
-    async function historyTransactions () {
-        const response = await fetch('http://localhost:3000/transactions')
-        const data = await response.json()
-        setTransactions(data)
-    }
-
-    useEffect(() => {
-        try {
-            historyTransactions()
-        } catch (error) {
-            console.error('Erro na requisição GET:', error);
-        }
-    }, [])
+    const { transactions } = useContext(TransactionsContext)
 
     return (
         <div>
@@ -47,11 +27,11 @@ export function Transactions () {
                             <td width='50%'>{transaction.title}</td>
                             <td>  
                                 <PriceHighlight variant={transaction.type}>
-                                    R${transaction.price}
+                                    {priceFormatter.format(transaction.price)}
                                 </PriceHighlight>
                             </td>
                             <td>{transaction.category}</td>
-                            <td>{transaction.createdAt}</td>
+                            <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
                         </tr>
                     ))}
                     {/* <tr>
