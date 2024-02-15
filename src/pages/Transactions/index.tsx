@@ -34,16 +34,6 @@ export function Transactions () {
                             <td>{dateFormatter.format(new Date(transaction.createdAt))}</td>
                         </tr>
                     ))}
-                    {/* <tr>
-                        <td width='50%'> Desenvolvimento de site</td>
-                        <td>
-                            <PriceHighlight variant="outcome">
-                                R$ 12.000
-                            </PriceHighlight>
-                        </td>
-                        <td>Venda</td>
-                        <td>13/04/2022</td>
-                    </tr> */}
                 </tbody>
             </TransactionsTable>
         </TransactionsContainer>
