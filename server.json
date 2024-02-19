@@ -39,6 +39,14 @@
       "category": "Alimentação",
       "price": 150,
       "createdAt": "2024-02-15T21:41:43.871Z"
+    },
+    {
+      "id": "c379",
+      "title": "PoliPet",
+      "type": "outcome",
+      "category": "Pet",
+      "price": 80,
+      "createdAt": "2024-02-19T13:11:55.600Z"
     }
   ]
 }
