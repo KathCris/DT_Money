@@ -1,9 +1,11 @@
-import { useContext } from "react";
+import { useContextSelector } from "use-context-selector";
 import { TransactionsContext } from "../contexts/TransactionsContext";
 
 export function useSummary () {
 
-  const { transactions } = useContext(TransactionsContext)
+  const transactions = useContextSelector(TransactionsContext, (context) => {
+    return context.transactions
+  })
 
     const infoSummary = transactions.reduce(
         // Aqui vem dos paramentros, o primeiro é o acumulador e o segundo é o item do seu array pai
