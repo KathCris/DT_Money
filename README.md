@@ -10,10 +10,11 @@ This is the repository of the DT-Money project, developed during the React track
 - Intuitive and responsive interface
 
 ## How to Use
-Clone the repository: git clone https://github.com/KathCris/DT_Money.git
-Install dependencies: npm install
-Start the application: npm run dev
-Start the application to JsonServer: npm run dev:server
+
+1. Clone the repository: `git clone https://github.com/KathCris/DT_Money.git`
+2. Install dependencies: `npm install`
+3. Start the application: `npm run dev`
+4. Start the application to JsonServer: `npm run dev:server`
 
 ## Technologies Used
 - React
