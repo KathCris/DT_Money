@@ -7,7 +7,6 @@ This is the repository of the DT-Money project, developed during the React track
 - Addition of income and expense transactions
 - View of the current balance
 - Classification of transactions by date
-- Intuitive and responsive interface
 
 ## How to Use
 
