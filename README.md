@@ -1,30 +1,25 @@
-# React + TypeScript + Vite
+# DT-Money 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the repository of the DT-Money project, developed during the React track course at Rockseat. The project focuses on personal account management, allowing users to track their income and expenses. 💰
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Addition of income and expense transactions
+- View of the current balance
+- Classification of transactions by date
+- Intuitive and responsive interface
 
-## Expanding the ESLint configuration
+## How to Use
+Clone the repository: git clone https://github.com/KathCris/DT_Money.git
+Install dependencies: npm install
+Start the application: npm run dev
+Start the application to JsonServer: npm run dev:server
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Technologies Used
+- React
+- Radix
+- Reduce
+- Context API
+- React Hooks
+- Json server
+- Use-context-selector
